@@ -1,4 +1,4 @@
-<%= form_for @patient do |f| %>
+<%= form_for(@patient, :html => { :class => "my-grid-form"} ) do |f| %>
    <% if @patient.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@patient.errors.count, "error") %> prohibited
@@ -10,17 +10,20 @@
       </ul>
     </div>
   <% end %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
- 
+<br>
+        <div data-row-span="2">
+            <div data-field-span="1">
+                <%= f.label :name %><br>
+                <%= f.text_field :name %>
+            </div>
+            <div data-field-span="1">
+                <%= f.label :description %><br>
+                <%= f.text_area :description, size: "22x6" %>
+            </div>
+        </div>
+<br>
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+
