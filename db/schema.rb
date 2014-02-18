@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218165810) do
+ActiveRecord::Schema.define(version: 20140218214555) do
 
   create_table "patients", force: true do |t|
-    t.string "name"
-    t.text   "description"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone_number"
+    t.string "address"
+    t.string "address_line_2"
+    t.string "city"
+    t.string "state"
+    t.string "zip_code"
   end
 
   create_table "users", force: true do |t|

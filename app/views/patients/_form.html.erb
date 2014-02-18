@@ -11,19 +11,24 @@
     </div>
   <% end %>
 <br>
+      <fieldset>
+        <legend>Demographic Info</legend>
         <div data-row-span="2">
             <div data-field-span="1">
-                <%= f.label :name %><br>
-                <%= f.text_field :name %>
+                <%= f.label :first_name %><br>
+                <%= f.text_field :first_name %>
             </div>
+      </fieldset>
             <div data-field-span="1">
-                <%= f.label :description %><br>
-                <%= f.text_area :description, size: "22x6" %>
+                <%= f.label :last_name %><br>
+                <%= f.text_field :last_name %>
             </div>
         </div>
 <br>
-  <p>
-    <%= f.submit %>
-  </p>
+    <div>
+      <p>
+        <%= f.submit %>
+      </p>
+    </div>
 <% end %>
 
