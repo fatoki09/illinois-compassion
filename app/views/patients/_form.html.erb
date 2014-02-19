@@ -12,19 +12,59 @@
   <% end %>
 <br>
       <fieldset>
-        <legend>Demographic Info</legend>
-        <div data-row-span="2">
-            <div data-field-span="1">
+        <legend>Fill out the form below to get in line!</legend>
+        <div data-row-span="4">
+            <div data-field-span="0.5">
                 <%= f.label :first_name %><br>
                 <%= f.text_field :first_name %>
             </div>
-      </fieldset>
-            <div data-field-span="1">
+      
+            <div data-field-span="1.5">
                 <%= f.label :last_name %><br>
                 <%= f.text_field :last_name %>
             </div>
+            <div data-field-span="1">
+                <%= f.label :email %><br>
+                <%= f.text_field :email %>
+            </div>
         </div>
+        <div data-row-span="4">
+            <div data-field-span="1">
+                <%= f.label :phone_number %><br>
+                <%= f.text_field :phone_number %>
+            </div>
+      
+            <div data-field-span="1">
+                <%= f.label :address %><br>
+                <%= f.text_field :address %>
+            </div>
+
+            <div data-field-span="1">
+                <%= f.label :address_line_2 %><br>
+                <%= f.text_field :address_line_2 %>
+            </div>
+        </div>
+        <div data-row-span="4">
+            <div data-field-span="2">
+                <%= f.label :city %><br>
+                <%= f.text_field :city %>
+            </div>
+      
+            <div data-field-span="0.5">
+                <%= f.label :state %><br>
+                <%= f.text_field :state %>
+            </div>
+
+            <div data-field-span="1.5">
+                <%= f.label :zip_code %><br>
+                <%= f.text_field :zip_code %>
+            </div>
+        </div>
+      </fieldset>
 <br>
+      
+      
+
     <div>
       <p>
         <%= f.submit %>
