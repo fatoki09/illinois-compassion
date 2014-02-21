@@ -6,6 +6,6 @@ class PatientMailer < ActionMailer::Base
   def welcome_email(patient)
   	@patient = patient
   	mail(to: @patient.email,
-  				subject: Your spot is reserved!)
+  				subject: 'Your spot is reserved!')
   end
 end
